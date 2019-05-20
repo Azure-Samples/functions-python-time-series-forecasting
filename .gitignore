@@ -102,3 +102,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+worker_env
+.python_packages
+functions-python-time-series-forecasting.zip
