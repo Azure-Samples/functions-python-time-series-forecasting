@@ -1,9 +1,0 @@
-{
-    "python.pythonPath": "/Users/prananth/PythonSamples/functions-python-time-series-forecasting/worker_env/bin/python3",
-    "azureFunctions.deploySubpath": "functions-python-time-series-forecasting.zip",
-    "azureFunctions.pythonVenv": "worker_env",
-    "azureFunctions.projectLanguage": "Python",
-    "azureFunctions.projectRuntime": "~2",
-    "debug.internalConsoleOptions": "neverOpen",
-    "azureFunctions.preDeployTask": "func: pack"
-}
