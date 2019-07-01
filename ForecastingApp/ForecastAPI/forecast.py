@@ -10,6 +10,7 @@ from sklearn.metrics import mean_squared_error
 # Reference: https://machinelearningmastery.com/autoregression-models-time-series-forecasting-python/
 # This sample shows a simple time series graph prediction using autoregression model
 
+
 def predict(series):
 
     # split dataset
@@ -23,9 +24,10 @@ def predict(series):
     logging.info('Coefficients: %s' % model_fit.params)
 
     # make predictions
-    predictions = model_fit.predict(start=len(train), end=len(train)+len(test)-1, dynamic=False)
+    predictions = model_fit.predict(
+        start=len(train), end=len(train)+len(test)-1, dynamic=False)
     for i in range(len(predictions)):
-	    logging.info('predicted=%f, expected=%f' % (predictions[i], test[i]))
+        logging.info('predicted=%f, expected=%f' % (predictions[i], test[i]))
     error = mean_squared_error(test, predictions)
     logging.info('Test MSE: %.3f' % error)
     # plot results
@@ -35,7 +37,7 @@ def predict(series):
 
     # Save the plot as bytes
     buf = io.BytesIO()
-    pyplot.savefig(buf,format="png")
+    pyplot.savefig(buf, format="png")
     buf.seek(0)
     pyplotfile = buf.read()
     buf.close()

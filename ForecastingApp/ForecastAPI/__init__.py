@@ -14,10 +14,11 @@ Statsmodel depends on pystan and this demonstrates ML library installation chall
 that are overcome through the Azure Functions deployment process
 '''
 
+
 def main(req: func.HttpRequest,
          input: func.InputStream,
          output: func.Out[bytes]) -> func.HttpResponse:
-    
+
     logging.info('Python HTTP trigger function processed a request.')
 
     # If data has to be read from local csv file, you can mention the path this way
