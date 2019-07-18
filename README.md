@@ -1,10 +1,11 @@
 ---
-topic: sample
+page_type: sample
 languages:
     - python
 products:
+    - azure
     - azure-functions
-author: priyaananthasankar
+description: "This sample uses functions to forecast temperatures based on a series of temperature data."
 ---
 
 # Time Series Forecasting using Autoregression Model
@@ -63,5 +64,5 @@ For any local testing, use the sample local.settings.json and host.json, create 
 
 # References
 
-- [Create your first Python Function](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-function-python)
+- [Create your first Python Function](https://docs.microsoft.com/azure/azure-functions/functions-create-first-function-python)
 - [Time Series Autoregression Model](https://machinelearningmastery.com/autoregression-models-time-series-forecasting-python/ )
