@@ -12,18 +12,18 @@ description: "This sample uses functions to forecast temperatures based on a ser
 
 This sample uses functions to forecast temperatures based on a series of temperature data. It uses statsmodel autoregression to retrain the data.
 
-# Getting Started
+## Getting Started
 
-## Deploy to Azure
+### Deploy to Azure
 
-### Prerequisites
+#### Prerequisites
 
 - Install Python 3.6+
 - Install [Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#v2)
 - Install Docker
 - Note: If run on Windows, use Ubuntu WSL to run deploy script
 
-### Steps
+#### Steps
 
 - Click Deploy to Azure Button to deploy resources
 
@@ -41,7 +41,7 @@ or
   - [Create/Activate virtual environment](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-function-python#create-and-activate-a-virtual-environment)
   - Run `func azure functionapp publish [functionAppName] --build-native-deps` 
 
-## Test
+### Test
 
 - Upload the [csv dataset](https://raw.githubusercontent.com/jbrownlee/Datasets/master/daily-min-temperatures.csv) to the forecastinput container blob either through portal or through following Azure CLI
 
@@ -58,11 +58,11 @@ http://[functionappname]/api/ForecastAPI?name=daily-minimum-temperatures.csv&res
 
 ```
 
-## Local Testing
+### Local Testing
 
 For any local testing, use the sample local.settings.json and host.json, create [virtual environment](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-function-python#create-and-activate-a-virtual-environment) and run `func host start`
 
-# References
+## References
 
 - [Create your first Python Function](https://docs.microsoft.com/azure/azure-functions/functions-create-first-function-python)
 - [Time Series Autoregression Model](https://machinelearningmastery.com/autoregression-models-time-series-forecasting-python/ )
